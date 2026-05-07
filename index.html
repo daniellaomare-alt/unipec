@@ -6,20 +6,30 @@
     
   </head>
 </html>
-<h1>🏫 Admin Dashboard </h1>
-<button onclick="showParents()">Manage Parents</button>
-<button onclick="showLesson()">Manage lesson</button>
-<button onclick="showSchedule()">Schedule Reminders</button>
-<div id="output"></div>
-<script src="app. js"></script>
+<body>
+
+  <h1>🏫 School Admin Dashboard</h1>
+
+  <div class="container">
+
+    <button onclick="showParents()">👨‍👩‍👧 Manage Parents</button>
+    <button onclick="showLessons()">📘 Manage Lessons</button>
+    <button onclick="showSchedule()">⏰ Schedule Reminders</button>
+
+    <div id="output"></div>
+
+    <h2>Add Parent</h2>
+
+    <input type="text" id="parentName" placeholder="Parent Name">
+    <input type="text" id="parentPhone" placeholder="Phone Number">
+    <input type="text" id="childName" placeholder="Child Name">
+
+    <button onclick="addParent()">➕ Save Parent</button>
+
+    <ul id="parentList"></ul>
+
+  </div>
+
+  <script src="app.js"></script>
+
 </body>
-</html>
-<h2>Add Parent</h2>
-
-<input type="text" id="parentName" placeholder="Parent Name">
-<input type="text" id="parentPhone" placeholder="Phone Number">
-<input type="text" id="childName" placeholder="Child Name">
-
-<button onclick="addParent()">Save Parent</button>
-
-<ul id="parentList"></ul>
